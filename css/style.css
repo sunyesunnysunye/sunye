@@ -22,11 +22,11 @@
 */
 :root {
     /* 폰트 변수 */
-    --font-primary: 'Happiness-Sans-Regular', Courier, monospace, sans-serif;
+    --font-primary: 'MonoplexKR-Regular', Courier, monospace, sans-serif;
     --font-size-small: 0.8rem; /* 작은 텍스트 크기 (13px 기준 10.4px) */
     
     /* 색상 팔레트 */
-    --color-primary: rgb(0, 210, 255);   /* 주요 강조 색상 (노랑) */
+    --color-primary: rgb(0 , 255, 0);   /* 주요 강조 색상 */
     --color-link: rgb(0, 123, 255);       /* 링크 색상 (파랑) */
     --color-text-primary: rgb(0, 0, 0);   /* 기본 텍스트 색상 (검정) */
     --color-background-light: rgb(230, 230, 230); /* 밝은 배경색 (회색) */
@@ -150,8 +150,9 @@ a {
 */
 .left-panel {
     flex-shrink: 0; /* 공간이 부족해도 줄어들지 않음 */
+    flex-basis: 30%;
     overflow-y: auto; /* 내용이 넘치면 세로 스크롤바 생성 */
-    box-sizing: border-box;
+    box-sizing: border-box;   
     transition: none; /* 모든 전환 효과 비활성화 */
     background-color: var(--color-background-light); /* 밝은 배경색 */
 }
